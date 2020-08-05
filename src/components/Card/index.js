@@ -1,14 +1,12 @@
 import React from 'react';
 import Game from '../../objects/Game';
-import Circle from '../../objects/Circle';
-import Xis from '../../objects/Xis';
+import Player from '../../objects/Player';
 
 const Card = () => (
 
 <article className="card">
   <Game />
-  <Circle />
-  <Xis />
+  <Player />
 </article>
 
 
