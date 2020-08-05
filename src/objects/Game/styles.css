@@ -1,0 +1,6 @@
+.game {
+  width: 290px;
+  height: 290px;
+  background-color:var(--color-zero);
+  margin: 145px 145px 35px 35px;
+}
