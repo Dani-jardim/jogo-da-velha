@@ -2,11 +2,10 @@ import React from 'react';
 import Game from '../../objects/Game';
 import Player from '../../objects/Player';
 
-const Card = () => (
+const Card = (props) => (
 
 <article className="card">
-  <Game />
-  <Player />
+  {props.children}
 </article>
 
 
