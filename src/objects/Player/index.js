@@ -1,16 +1,17 @@
 import React from 'react';
 import './styles.css';
 import playerX from '../../img/player-x.png';
-import player0 from '../../img/player-0.png';
+import playerO from '../../img/player-o.png';
 
-const Player = (props) => {
+
+const Player = ({player}) => {
     const players = [];
     players ['x'] = playerX;
-    players ['0'] = player0;
+    players ['o'] = playerO;
 
  return ( 
   <button className="player">
-    <img src= {players [props.players]} alt="Jogador"/>
+    <img src= {players [player]} alt={`Jogador ${player}`}/>
   </button>)
 };
 

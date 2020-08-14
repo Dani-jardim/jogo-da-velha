@@ -8,7 +8,7 @@ function App() {
   <>
     <Header />
     <Card />
-    <Player player="0"/>
+    <Player player="x"/>
   </>
   );
 }
