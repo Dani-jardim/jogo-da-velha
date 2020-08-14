@@ -1,11 +1,10 @@
 import React from 'react';
-import Game from '../../objects/Game';
-import Player from '../../objects/Player';
+import './styles.css';
 
-const Card = (props) => (
+const Card = ({children}) => (
 
 <article className="card">
-  {props.children}
+  {children}
 </article>
 
 
