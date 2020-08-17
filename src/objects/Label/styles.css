@@ -1,4 +1,10 @@
 .label{
   font-size: var(--size-small);
+}
+
+.label::selection {
+  background-color: var(--color-first);
+  color:var(--color-zero);
+
 
 }
