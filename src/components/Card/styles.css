@@ -1,6 +1,5 @@
 .card{
   background-color:var(--color-zero);
-
   border-radius:4px;
   box-shadow: var(--color-light-negative);
 }
