@@ -4,4 +4,5 @@
   color:var(--color-fourth);
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }

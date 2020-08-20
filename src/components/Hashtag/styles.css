@@ -7,7 +7,6 @@
   background-color:var(--color-third);
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-
 }
 
 .hashtag .item {
@@ -76,5 +75,4 @@
 .hashtag > .item:nth-child(8)::after {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-
 }
