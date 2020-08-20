@@ -3,7 +3,7 @@ import React from 'react';
 
 const Input = ({id = "", value = "", type= "checkbox"}) => (
 
-  <input id={id} type={type} value={value} />
+  <input className="input" id={id} type={type} value={value} />
 
 );
 
