@@ -6,3 +6,7 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+.about-link.-light{
+  color:var(--color-zero)
+}
