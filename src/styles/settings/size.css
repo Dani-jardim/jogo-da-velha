@@ -1,6 +1,6 @@
 :root {
   --size-small : 14px;
-  font-weight: bold;
+  --size-big: 22px;
   color: var(--color-fourth);
 
 }

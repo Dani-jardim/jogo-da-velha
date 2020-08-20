@@ -1,20 +1,20 @@
 import React from 'react';
+import "./styles.css";
 import Profile from '../../img/avatar-profile.png'
 
 import AvatarProfile from '../../objects/AvatarProfile';
 
 
 const ProfileUser = () => (
-  <dl>
+  <dl className="profile-user">
 
-    <dd>
+    <dd className="avatar">
       <AvatarProfile src={Profile} alt= "Avatar Daniela" />
     </dd>
-    <dd>
-      Eu sou a Dani, sou designer gráfica e frontend em início de carreira. Moro em São Paulo. As minhas stacks atuais são: Html, CSS, JavaScript e React
+    <dt className="title">Dani Jardim</dt>
+    <dd className="description">Sou designer gráfica e frontend em início de carreira. Moro em São Paulo. As minhas stacks atuais são: Html, CSS, JavaScript e React
     </dd>
 
-    <dt>Dani Jardim</dt>
   </dl>
 
 );
