@@ -8,6 +8,7 @@ import IconClose from './objects/IconClose';
 
 import Header from './components/Header';
 import Hashtag from './components/Hashtag';
+import LogoCollab from './objects/LogoCollab';
 
 
 const App = () => (
@@ -17,6 +18,7 @@ const App = () => (
     <Checkbox id="show" value="show" type="checkbox" content="Mostrar Eventos" />
     
     <About>
+      <LogoCollab light />
       <AboutLink className="-light" />
       <IconClose />
     </About>
