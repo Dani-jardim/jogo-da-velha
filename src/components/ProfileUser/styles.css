@@ -16,7 +16,16 @@
   font-weight: bold;
 }
 
-.profile-user > .description {
-  width: 70%;
+.profile-user > .description{
+  width: 80%;
+  margin: 0 auto var(--spacing-very-big);
+  line-height: 1.6;
+}
+
+.profile-user > .socials {
+  display:flex;
+  justify-content: space-between;
   margin: 0 auto;
+  width: 70%;
+
 }
