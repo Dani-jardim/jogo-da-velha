@@ -3,7 +3,6 @@ import './App.css';
 
 import Checkbox from './objects/Checkbox';
 import About from './objects/About';
-import AvatarProfile from './objects/AvatarProfile';
 
 import Header from './components/Header';
 import Hashtag from './components/Hashtag';
@@ -17,7 +16,7 @@ const App = () => (
     <Hashtag />
     <Checkbox id="show" value="show" type="checkbox" content="Mostrar Eventos" />
     
-    <About>
+    <About className="-active">
       <HeaderInternal />
       <ProfileUser />
     </About>
