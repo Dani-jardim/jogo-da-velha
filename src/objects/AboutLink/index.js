@@ -1,15 +1,10 @@
 import React from 'react';
 import "./styles.css";
 
-const handleClick = () => {
-  console.log("clicou")
-
-};
-
-const AboutLink = ({ className = "" }) => ( 
+const AboutLink = ({ className = "", onClick }) => ( 
   <a href="#to-do" 
     className={`about-link ${className}`} 
-    onClick={handleClick}
+    onClick={onClick}
   >
     Sobre
   </a> 
