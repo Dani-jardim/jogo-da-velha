@@ -3,6 +3,7 @@ import './App.css';
 
 import Checkbox from './objects/Checkbox';
 import About from './objects/About';
+import TagGame from './objects/TagGame';
 
 import Header from './components/Header';
 import Hashtag from './components/Hashtag';
@@ -21,6 +22,8 @@ const App = () => {
       <Hashtag />
       <Checkbox id="show" value="show" type="checkbox" content="Mostrar Eventos" />
       
+      <TagGame content="Adicionou O" /> 
+
       <About className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove} />
         <ProfileUser />
