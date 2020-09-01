@@ -19,10 +19,9 @@ const App = () => {
   const handleClickRemove = () => setActiveAbout ("")
 
   const handleClick = () => {
-    console.log("daniii")
-    setHistoryGame("-active")
+    setHistoryGame (old => old === '-active'? "" : "-active" )
   }
-
+  
   return (
     <main id="main" className="app">
       <Header onClick={handleClickAdd} />

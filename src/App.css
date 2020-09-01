@@ -24,7 +24,7 @@
   margin: var(--spacing-big);
 }
 
-.app > .history-game.-active{
+.app > .history-game{
   display: none;
 }
 
