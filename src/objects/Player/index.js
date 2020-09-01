@@ -3,6 +3,10 @@ import './styles.css';
 import playerX from '../../img/player-x.png';
 import playerO from '../../img/player-o.png';
 
+const handleClick = () =>{
+  console.log("cliquei")
+}
+
 
 const Player = ({player = false}) => {
     const players = [];
@@ -10,7 +14,7 @@ const Player = ({player = false}) => {
     players ['o'] = playerO;
 
  return ( 
-  <button className="player">
+  <button onClick={handleClick} className="player-game">
     {player && <img src= {players [player]} alt={`Jogador ${player}`}/>}
   </button>)
 };
