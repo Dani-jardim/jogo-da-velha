@@ -11,12 +11,12 @@ import ProfileUser from './components/ProfileUser';
 
 const App = () => {
   const [activeAbout, setActiveAbout] = useState ("")
-  
+
   const handleClickAdd = () => setActiveAbout ("-active") 
   const handleClickRemove = () => setActiveAbout ("")
 
   return (
-    <main className="app">
+    <main id="main" className="app">
       <Header onClick={handleClickAdd} />
       <Hashtag />
       <Checkbox id="show" value="show" type="checkbox" content="Mostrar Eventos" />
