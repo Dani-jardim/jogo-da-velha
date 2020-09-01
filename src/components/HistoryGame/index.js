@@ -5,28 +5,31 @@ import TagGame from '../../objects/TagGame';
 const HistoryGame = () => (
   <ol className ="history-game">
     <li className="action">
-      <TagGame content="Adicionou ${x}"/>
+      <TagGame content="Adicionou x"/>
     </li>
     <li className="action">
-      <TagGame content="Adicionou ${x}"/>
+      <TagGame content="Adicionou x"/>
     </li>
     <li className="action">
-      <TagGame content="Adicionou ${x}"/>
+      <TagGame content="Adicionou x"/>
     </li>
     <li className="action">
-      <TagGame content="Adicionou ${x}"/>
+      <TagGame content="Adicionou x"/>
     </li>
     <li className="action">
-      <TagGame content="Adicionou ${x}"/>
+      <TagGame content="Adicionou x"/>
     </li>
     <li className="action">
-      <TagGame content="Adicionou ${x}"/>
+      <TagGame content="Adicionou x"/>
     </li>
     <li className="action">
-      <TagGame content="Adicionou ${x}"/>
+      <TagGame content="Adicionou x"/>
     </li>
     <li className="action">
-      <TagGame />
+      <TagGame content="Adicionou x" />
+    </li>
+    <li className="action">
+      <TagGame className="-end" content="Empate!" />
     </li>
   </ol>
 )
