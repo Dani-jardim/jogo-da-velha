@@ -19,3 +19,7 @@
   height: 90vw;
   margin-bottom:40px;
 }
+
+.app > .label {
+  margin: var(--spacing-big);
+}
