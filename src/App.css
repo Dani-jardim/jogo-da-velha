@@ -23,3 +23,11 @@
 .app > .label {
   margin: var(--spacing-big);
 }
+
+.app > .history-game.-active{
+  display: none;
+}
+
+.app > .history-game.-active{
+  display: block;
+}

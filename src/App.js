@@ -13,17 +13,23 @@ import HistoryGame from './components/HistoryGame';
 
 const App = () => {
   const [activeAbout, setActiveAbout] = useState ("")
+  const [activeHistoryGame, setHistoryGame] = useState("")
 
   const handleClickAdd = () => setActiveAbout ("-active") 
   const handleClickRemove = () => setActiveAbout ("")
+
+  const handleClick = () => {
+    console.log("daniii")
+    setHistoryGame("-active")
+  }
 
   return (
     <main id="main" className="app">
       <Header onClick={handleClickAdd} />
       <Hashtag />
-      <Checkbox id="show" value="show" type="checkbox" content="Mostrar Eventos" />
+      <Checkbox onClick={handleClick} id="show" value="show" type="checkbox" content="Mostrar Eventos" />
       
-      <HistoryGame /> 
+      <HistoryGame className={activeHistoryGame}/> 
 
       <About className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove} />
