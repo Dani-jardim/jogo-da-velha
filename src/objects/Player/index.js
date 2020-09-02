@@ -3,12 +3,7 @@ import './styles.css';
 import playerX from '../../img/player-x.png';
 import playerO from '../../img/player-o.png';
 
-// const handleClick = () =>{
-//   console.log("cliquei")
-// }
-
-
-const Player = ({player = false}) => {
+const Player = ({ player = false }) => {
   const [statePlayer, setStatePlayer] = useState(player)
     const players = [];
     players ['x'] = playerX;
