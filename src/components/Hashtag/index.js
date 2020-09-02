@@ -17,15 +17,22 @@ const Hashtag = () => {
     {id: 9, content: ''}
   ])
   
-  const handleClick = () => {
-    console.log("jogardor", nextPlayer) 
-      setNextPlayer (old => old === 'x'? "o" : "x" )
+  const handleClick = (id) => {
+    console.log("jogador", nextPlayer) 
+    console.log(id)
+
+    setPlayers(old => old.map(player => player.id ==='id' ? {id, content: nextPlayer}: player))
+    
+
+    setNextPlayer (old => old === 'x'? "o" : "x" )
   }
 
   return (
     <Card >
-      <ul className="hashtag" onClick={handleClick}>
-        {players.map(player => <li className="item"><Player player={nextPlayer} /></li>)}
+      <ul className="hashtag">
+        {players.map(player => 
+          <li key={player.id} className="item" onClick={() => handleClick(player.id)}>
+            <Player id={player.id} content={player.content} /></li>)}
       </ul>
     </Card>
   )
