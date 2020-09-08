@@ -15,6 +15,8 @@ const App = () => {
   const [activeAbout, setActiveAbout] = useState ("")
   const [activeHistoryGame, setHistoryGame] = useState("")
 
+  const history = ["Adicionou X", "Adicionou O","Adicionou X", ]
+
   const handleClickAdd = () => setActiveAbout ("-active") 
   const handleClickRemove = () => setActiveAbout ("")
 
@@ -28,7 +30,7 @@ const App = () => {
       <Hashtag />
       <Checkbox onClick={handleClick} id="show" value="show" type="checkbox" content="Mostrar Eventos" />
       
-      <HistoryGame className={activeHistoryGame}/> 
+      <HistoryGame history={history} className={activeHistoryGame}/> 
 
       <About className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove} />
