@@ -28,7 +28,7 @@ const Hashtag = () => {
     <Card >
       <ul className="hashtag">
         {players.map(({id, content}) => (
-          <li key={id} className="item" onClick={() => handleClick(id)}>
+          <li key={id} className="item" onClick={() => content === '' && handleClick(id)}>
             <Player id={id} content={content} /></li>))}
       </ul>
     </Card>
