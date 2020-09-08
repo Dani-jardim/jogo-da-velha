@@ -4,7 +4,6 @@ import playerX from '../../img/player-x.png';
 import playerO from '../../img/player-o.png';
 
 const Player = ({ content = '' }) => {
-
     const players = [];
     players [''] = '';
     players ['x'] = playerX;
