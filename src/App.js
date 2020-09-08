@@ -15,7 +15,7 @@ const App = () => {
   const [activeAbout, setActiveAbout] = useState ("")
   const [activeHistoryGame, setHistoryGame] = useState("")
 
-  const history = ["Adicionou X", "Adicionou O","Adicionou X", ]
+  const history = [""]
 
   const handleClickAdd = () => setActiveAbout ("-active") 
   const handleClickRemove = () => setActiveAbout ("")
@@ -24,10 +24,16 @@ const App = () => {
     setHistoryGame (old => old === '-active'? "" : "-active" )
   }
   
+  const addHistory = (player) => {
+    console.log("antes", history)
+    history.push(`Adicionou ${player.toUpperCase()}`)
+    console.log("depois", history)
+  }
+
   return (
     <main id="main" className="app">
       <Header onClick={handleClickAdd} />
-      <Hashtag />
+      <Hashtag callback={addHistory} />
       <Checkbox onClick={handleClick} id="show" value="show" type="checkbox" content="Mostrar Eventos" />
       
       <HistoryGame history={history} className={activeHistoryGame}/> 
